@@ -14,8 +14,8 @@ Unexpected behaviour may happen outside these requirements.
 ## Install
 
 ```
-git clone https://github.com/jankdc/brandwatch-test
-cd brandwatch-test
+git clone https://github.com/jankdc/bw-test
+cd bw-test
 npm install
 ```
 
