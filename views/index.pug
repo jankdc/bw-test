@@ -1,0 +1,33 @@
+doctype html
+html
+  head
+    title A Web Page
+
+    meta(charset="utf-8")
+    meta(name="author" content="Jan Karlo Dela Cruz")
+
+    if development
+      link(rel='stylesheet', href='css/vendor/normalize.css')
+      link(rel='stylesheet', href='css/main.css')
+
+      script(defer, src='js/vendor/jquery-3.1.1.js')
+      script(defer, src='js/vendor/wordcloud2.js')
+      script(defer, src='js/vendor/canteen.js')
+      script(defer, src='js/topic-cloud.js')
+      script(defer, src='js/main.js')
+    else
+      link(rel='stylesheet', href='css/styles.css')
+
+      script(defer, src='js/scripts.js')
+  body
+    header
+      h1 My Topics Challenge
+    main
+      #cloud
+        canvas#cloud-canvas(height='500px', width='1000px')
+      aside.sidebar
+        p#topic
+        p#total-mentions
+        p#positive-mentions
+        p#neutral-mentions
+        p#negative-mentions

@@ -1,0 +1,75 @@
+html {
+    min-width: 100%;
+    min-height: 100%;
+}
+
+body {
+    width: 1500px;
+    margin: 0 auto;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+main {
+    display: flex;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+#topic::before {
+    font-weight: bold;
+    content: 'Information on topic ';
+}
+
+#positive-mentions {
+    color: green;
+    margin: 0;
+}
+
+#neutral-mentions {
+    margin: 0;
+}
+
+#negative-mentions {
+    color: red;
+    margin: 0;
+}
+
+#total-mentions::before {
+    font-weight: bold;
+    color: black;
+    content: 'Total Mentions: ';
+}
+
+#positive-mentions::before {
+    font-weight: bold;
+    color: black;
+    content: 'Positive Mentions: ';
+}
+
+#neutral-mentions::before {
+    font-weight: bold;
+    color: black;
+    content: 'Neutral Mentions: ';
+}
+
+#negative-mentions::before {
+    font-weight: bold;
+    color: black;
+    content: 'Negative Mentions: ';
+}
+
+#cloud {
+    width: 1000px;
+}
+
+#cloud-canvas {
+    width: inherit;
+    height: 500px;
+    margin: 0 auto;
+}
+
+.sidebar {
+    width: 400px;
+}

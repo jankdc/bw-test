@@ -1,0 +1,47 @@
+{
+  "name": "brandwatch-test",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "NODE_ENV=production node_modules/gulp/bin/gulp.js",
+    "devel": "NODE_ENV=development DEBUG=brandwatch-test:* node_modules/gulp/bin/gulp.js devel",
+    "clean": "node_modules/gulp/bin/gulp.js clean",
+    "docs": "node_modules/gulp/bin/gulp.js gdocs",
+    "test": "NODE_ENV=test node_modules/gulp/bin/gulp.js tests"
+  },
+  "dependencies": {
+    "debug": "2.2.0",
+    "express": "4.14.0",
+    "morgan": "1.7.0",
+    "pug": "2.0.0-beta6"
+  },
+  "devDependencies": {
+    "chai": "3.5.0",
+    "del": "2.2.2",
+    "gulp": "3.9.1",
+    "gulp-clean-css": "2.3.2",
+    "gulp-concat": "2.6.1",
+    "gulp-eslint": "3.0.1",
+    "gulp-exit": "0.0.2",
+    "gulp-jsdoc3": "^1.0.1",
+    "gulp-load-plugins": "1.4.0",
+    "gulp-mocha": "3.0.1",
+    "gulp-nodemon": "2.2.1",
+    "gulp-rename": "1.2.2",
+    "gulp-uglify": "2.0.0",
+    "karma": "1.3.0",
+    "karma-chai": "0.1.0",
+    "karma-chrome-launcher": "2.0.0",
+    "karma-firefox-launcher": "1.0.0",
+    "karma-fixture": "0.2.6",
+    "karma-html2js-preprocessor": "1.1.0",
+    "karma-json-fixtures-preprocessor": "0.0.6",
+    "karma-mocha": "1.3.0",
+    "karma-mocha-reporter": "2.2.1",
+    "karma-phantomjs-launcher": "1.0.2",
+    "karma-safari-launcher": "1.0.0",
+    "mocha": "3.2.0",
+    "run-sequence": "1.2.2",
+    "supertest": "2.0.1"
+  }
+}
